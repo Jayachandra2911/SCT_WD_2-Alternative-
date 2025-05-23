@@ -1,6 +1,4 @@
 # SCT_WD_2-Alternative-
-:
-
 💻 Calculator Web Application
 This project is a fully functional web-based calculator built using HTML, CSS, and JavaScript as part of my internship at Skillcraft Technology.
 
