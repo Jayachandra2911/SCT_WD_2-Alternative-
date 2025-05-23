@@ -1,0 +1,123 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  font-family: 'Poppins', sans-serif;
+}
+
+body {
+  height: 100vh;
+  display: grid;
+  place-items: center;
+  background: linear-gradient(179deg, #3F5EFB 0%, #FC466B 100%);
+}
+
+.main {
+  width: 300px;
+  background: #ecf0f1;
+  border-radius: 15px;
+  padding: 15px;
+  box-shadow: 0 8px 20px rgba(0, 0, 0, 0.3);
+}
+
+.main input[type='text'] {
+  width: 100%;
+  height: 60px;
+  font-size: 24px;
+  text-align: right;
+  padding: 10px;
+  margin-bottom: 15px;
+  background: #fff;
+  color: #2c3e50;
+  border: 2px solid #bdc3c7;
+  border-radius: 10px;
+  outline: none;
+  box-shadow: inset 0 2px 5px rgba(0, 0, 0, 0.1);
+}
+
+.btn {
+  display: grid;
+  grid-template-columns: repeat(5, 1fr);
+  gap: 10px;
+  justify-items: center;
+}
+
+.btn input[type='button'] {
+  width: 40px;
+  height: 40px;
+  font-size: 15px;
+  border: none;
+  border-radius: 10px;
+  cursor: pointer;
+  color: #fff;
+  background: #34495e;
+  transition: 0.3s ease;
+  box-shadow: 0 4px 6px rgba(0, 0, 0, 0.3);
+}
+
+.btn input[type='button']:hover {
+  background: #2980b9;
+  box-shadow: 0 6px 8px rgba(0, 0, 0, 0.4);
+}
+
+.btn input[type='button']:active {
+  background: #1abc9c;
+  transform: scale(1.05);
+  box-shadow: 0 0 15px rgba(33, 150, 234, 0.75);
+}
+
+.clear {
+  background: #e74c3c;
+}
+
+.clear:hover {
+  background: #c0392b;
+}
+
+.equal {
+  background: #28a745;
+}
+
+.btn input[value='+'],
+.btn input[value='-'],
+.btn input[value='/'],
+.btn input[value='*'],
+.btn input[value='%'],
+.btn input[value='x²'],
+.btn input[value='√']{
+  background: #f39c12;
+}
+
+.btn input[value='+']:hover,
+.btn input[value='-']:hover,
+.btn input[value='/']:hover,
+.btn input[value='*']:hover,
+.btn input[value='%']:hover,
+.btn input[value='x²']:hover,
+.btn input[value='√']:hover {
+  background: #e67e22;
+}
+
+.btn input[value='Del']:hover {
+  background-color: red;
+}
+
+.btn input[value='=']:hover {
+  background: green;
+}
+
+@media (max-width: 480px) {
+  .main {
+    width: 90%;
+    padding: 10px;
+  }
+  .main input[type='text'] {
+    font-size: 20px;
+    height: 50px;
+  }
+  .btn input[type='button'] {
+    width: 50px;
+    height: 50px;
+    font-size: 16px;
+  }
+}
